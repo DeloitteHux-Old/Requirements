@@ -1,1 +1,2 @@
+# Last release with Py2 support
 Twisted==15.4.0
