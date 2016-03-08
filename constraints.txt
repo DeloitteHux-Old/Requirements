@@ -1,3 +1,8 @@
+# This version of dogstatsd-python is really really slow on CPython especially,
+# because of a socket hiding behind a property().
+# See https://github.com/DataDog/dogstatsd-python/pull/30
+dogstatsd-python!=0.5.4
+
 # Later versions of Werkzeug have really significant performance issues due to
 # Python 3 Support. See e.g. https://github.com/mitsuhiko/werkzeug/issues/429
 Werkzeug==0.8.3
