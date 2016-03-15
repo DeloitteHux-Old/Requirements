@@ -6,3 +6,6 @@ dogstatsd-python!=0.5.4
 # Later versions of Werkzeug have really significant performance issues due to
 # Python 3 Support. See e.g. https://github.com/mitsuhiko/werkzeug/issues/429
 Werkzeug==0.8.3
+
+# Earlier versions of WebTest lack proper support for cookie(jar)s.
+WebTest>=2.0.7
