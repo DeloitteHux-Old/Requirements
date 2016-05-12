@@ -12,3 +12,6 @@ WebTest>=2.0.7
 
 # PyChef 0.3.0 is broken, see https://github.com/coderanger/pychef/issues/55
 PyChef!=0.3.0
+
+# TEMPORARY: until DevPI fixes the PEP-503 thing, use a slightly older pip
+pip<8.1.2
