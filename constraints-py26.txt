@@ -2,6 +2,3 @@
 hypothesis==3.0.4
 # Last release with Py26 support
 Twisted==15.4.0
-
-# TEMPORARY: until DevPI fixes the PEP-503 thing, use a slightly older pip
-pip<8.1.2
