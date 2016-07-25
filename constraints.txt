@@ -8,3 +8,7 @@ WebTest>=2.0.7
 
 # PyChef 0.3.0 is broken, see https://github.com/coderanger/pychef/issues/55
 PyChef!=0.3.0
+
+# Flake8 3.0.0 broke something about loading exclude from tox.ini.
+# Not quite sure what yet.
+flake8<3.0.0
