@@ -12,3 +12,8 @@ PyChef!=0.3.0
 # Flake8 3.0.0 broke something about loading exclude from tox.ini.
 # Not quite sure what yet.
 flake8<3.0.0
+
+# At least the wheel is broken on this version, see:
+# https://github.com/eliben/pycparser/issues/147
+# https://github.com/eliben/pycparser/issues/148
+pycparser!=2.14
