@@ -1,4 +1,8 @@
 # Doesn't officially support Py26, but this version works.
 hypothesis==3.0.4
+
+# Last release with Py26 support
+jsonschema==2.5.1
+
 # Last release with Py26 support
 Twisted==15.4.0
