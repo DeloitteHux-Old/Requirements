@@ -6,3 +6,6 @@ jsonschema==2.5.1
 
 # Last release with Py26 support
 Twisted==15.4.0
+
+# First version to drop support for Py26, but it works
+attrs==16.0.0
