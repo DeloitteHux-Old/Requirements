@@ -9,3 +9,7 @@ Twisted==15.4.0
 
 # First version to drop support for Py26, but it works
 attrs==16.0.0
+
+# The Requests package before 2.19.1 sends an HTTP Authorization header to an http URI upon receiving a same-hostname https-to-http redirect,
+# which makes it easier for remote attackers to discover credentials by sniffing the network.
+requests>2.19.1
