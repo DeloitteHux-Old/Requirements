@@ -24,7 +24,7 @@ pycparser!=2.14
 # The Requests package before 2.19.1 sends an HTTP Authorization header to an http URI upon receiving a same-hostname https-to-http redirect,
 # which makes it easier for remote attackers to discover credentials by sniffing the network.
 requests>2.19.1
-# dependency of requests > 2.19.1, resctricting requests still allow old urllib3 version. 
+# dependency of requests > 2.19.1, restricting requests still allow old urllib3 version. 
 urllib3>1.23
 
 # 3.0.0 introduces a breaking change by removing `IntervalTree.search` and
