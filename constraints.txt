@@ -13,8 +13,8 @@ PyChef!=0.3.0
 # Not quite sure what yet.
 flake8<3.0.0
 
-# This version broke max_examples=1
-hypothesis!=3.56.0
+# From 4.0.0 can't sample from unordered collection. We do this a lot.
+hypothesis<4.0.0
 
 # At least the wheel is broken on this version, see:
 # https://github.com/eliben/pycparser/issues/147
