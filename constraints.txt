@@ -25,5 +25,5 @@ pycparser!=2.14
 # which makes it easier for remote attackers to discover credentials by sniffing the network.
 requests>2.19.1
 # Earlier versions of urllib3 have a security vulnerability and it brakes `safety` check
-urllib3>1.23
-
+# requests requires a version below 1.25
+urllib3>1.23,<1.25
