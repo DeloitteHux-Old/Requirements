@@ -27,3 +27,8 @@ requests>2.19.1
 # Earlier versions of urllib3 have a security vulnerability and it brakes `safety` check
 urllib3>1.23
 
+
+# Starting with version 1.8 Eliot disables Python 2 support, so until we migrate to Python 3,
+# this has to stay in place
+eliot<1.8.0
+
