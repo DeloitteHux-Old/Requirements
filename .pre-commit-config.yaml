@@ -1,0 +1,46 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.3.0
+    hooks:
+      - id: trailing-whitespace
+        files: \.(yaml|yml)$
+      - id: check-yaml
+      - id: check-added-large-files
+      - id: check-json
+      - id: pretty-format-json
+      - id: detect-aws-credentials
+      - id: end-of-file-fixer
+      - id: check-merge-conflict
+      - id: detect-private-key
+      - id: requirements-txt-fixer
+
+  - repo: git://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.45.0
+    hooks:
+      - id: terraform_fmt
+      - id: terragrunt_fmt
+
+  - repo: https://github.com/ansible/ansible-lint.git
+    rev: v4.2.0
+    hooks:
+      - id: ansible-lint
+        name: Ansible-lint
+        entry: ansible-lint --force-color
+        files: \.(yaml|yml)$
+        exclude: ng_private_vars/.*\.(yaml|yml)$|.*secret.*\.yml$|test/integration/playbooks/.*/|roles/hv-server-deploy/.*
+        language: python
+        pass_filenames: true
+
+  - repo: https://github.com/milin/giticket
+    rev: v1.1
+    hooks:
+      - id: giticket
+        args: ["--regex=PROJ-[0-9]", "--format={ticket} {commit_msg}"]
+
+  - repo: https://github.com/prettier/pre-commit
+    rev: v2.2.0
+    hooks:
+      - id: prettier
+        entry: prettier --write --list-different --ignore-unknown
